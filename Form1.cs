@@ -12,7 +12,7 @@ namespace translate_test
 {
     public partial class Form1 : Form
     {
-        static Dictionary<string, string> dict = new Dictionary<string, string>();
+        Dictionary<string, string> dict = new Dictionary<string, string>();
         StringBuilder text;
         Timer t;
         int count = 0, timer_interval = 50;
@@ -68,7 +68,7 @@ namespace translate_test
                             text.Append(Format(h.InnerText));
                             ((Timer)sender).Enabled = false;
                             timer_interval = 50;
-                          //  LoadNextString();
+                            LoadNextString();
                         }
                     }
                     break;
